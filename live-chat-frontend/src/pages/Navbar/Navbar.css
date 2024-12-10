@@ -1,0 +1,97 @@
+.navbar-container {
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better separation */
+}
+
+.navbar-header {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark background for contrast */
+  color: white;
+  padding: 10px 20px;
+}
+
+.current-user {
+  font-size: 1.1em;
+}
+
+.hamburger-menu {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background-color: #fd6868;
+}
+
+.logout-button {
+  background-color: #5f5c5c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+.logout-button:hover {
+  background-color: #292323;
+}
+
+.update-button {
+  background-color: #5555ff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.update-button:hover {
+  background-color: #3333ff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+  }
+
+  .current-user {
+    display: none;
+  }
+}
